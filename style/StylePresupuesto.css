@@ -1,0 +1,250 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+body{
+    display: grid;
+    grid-template-areas:
+    "my-header"
+    "my-main"
+    "my-footer"
+    ;
+    grid-template-columns: 100%;
+    grid-template-rows: 300px 1fr 80px;
+    background: rgba(159, 18, 18, 70%);
+}
+
+/****************************************************************************************************************************************
+*****************************************************************************************************************************************
+*****************************************************************************************************************************************
+**********************************************************HEADER*************************************************************************
+*****************************************************************************************************************************************
+*****************************************************************************************************************************************
+****************************************************************************************************************************************/
+
+header{
+    grid-area: my-header;
+    display: flex;
+    justify-content: center;
+}
+
+header img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+nav{
+    display: flex;
+    width: 100%;
+    height: 12%;
+    position: absolute;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px; 
+}
+
+.logo{
+    width: 100px;
+    height: 100px;
+    margin-left: 20px;
+}
+
+nav ul{
+    display: flex;
+}
+
+nav ul li{
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    text-align: center;
+    margin-right: 15px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.aqui{
+    color: rgb(159, 18, 18);
+}
+
+nav:hover{
+    width: 100%;
+    height: 12%;
+    background: white;
+}
+
+nav:hover ul li a{
+    color: black;
+}
+
+nav ul li a:hover{
+    border-bottom: 2px solid rgb(159, 18, 18);
+}
+
+/****************************************************************************************************************************************
+*****************************************************************************************************************************************
+*****************************************************************************************************************************************
+*************************************************************MAIN************************************************************************
+*****************************************************************************************************************************************
+*****************************************************************************************************************************************
+****************************************************************************************************************************************/
+
+main{
+    grid-area: my-main;
+    box-sizing: border-box;
+}
+
+
+h2{
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 100px;
+    margin-top: 50px;
+}
+
+.formulario li{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+form{
+    width: 800px;
+    margin: auto;
+    align-items: center;
+
+}
+
+.formulario li h2{
+    align-items: center;
+}
+
+.formulario li label{
+    font-weight: 400;
+    text-transform: uppercase;
+    color: white;
+}
+
+.politicas{
+    display: flex;
+    justify-content: center;
+}
+
+fieldset{
+    display: flex;
+    width: 400px;
+    height: 100px;
+    text-align: center;
+    align-items: center;
+}
+
+.centrar{
+    width: 100%;
+}
+
+.centrar input{
+    margin-right: 10px;
+}
+
+.centrar label{
+    margin-left: 10px;
+}
+
+.formulario:nth-last-child(2){
+    align-items: center;
+}
+
+.formulario li input{
+    width: 400px;
+    height: 25px;
+}
+
+.formulario li textarea{
+    width: 400px;
+}
+
+.button2{
+    display: flex;
+    justify-content: center;
+    margin: 40px;
+}
+
+.button1{
+    display: flex;
+    width: 500px;
+    justify-content:space-between;
+}
+
+.button1 input{
+    width: 90px;
+    height: 25px;
+    border-radius: 30px;
+    background: rgb(159, 18, 18);
+    color: white;
+    border: rgb(159, 18, 18);
+}
+
+.button1 input:hover{
+    background: white;
+    color: rgb(159, 18, 18);
+}
+
+/****************************************************************************************************************************************
+*****************************************************************************************************************************************
+*****************************************************************************************************************************************
+************************************************************FOOTER***********************************************************************
+*****************************************************************************************************************************************
+*****************************************************************************************************************************************
+****************************************************************************************************************************************/
+
+footer{
+    grid-area: my-footer;
+    background: black;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+footer p{
+    color: gray;
+}
+
+footer>p{
+    align-content:end;
+}
+
+footer ul{
+    display: flex;
+}
+
+.infoPie{
+    align-content:center;
+}
+
+.infoPie a{
+    color: white;
+}
+
+.infoPie a:nth-child(2){
+    margin: 50px;
+}
+
+.icono1{
+    width: 40px;
+    margin-top: 15px;
+    margin-right: 5px;
+}
+
+.icono2{
+    width: 82px;
+    margin-top: 9px;
+}

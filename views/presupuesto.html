@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../style/StylePresupuesto.css" type="text/css">
+    <title>Capitán de la reforma</title>
+</head>
+<body>
+    <header>
+        <nav class="hover">
+            <img class="logo" src="../img/LogoCapitan.png" alt="logo reforma" width="3264" height="3264">
+     
+            <ul>
+                <li><a class="hover" href="../Index.html">Inicio</a></li>
+                <li><a class="hover" href="galeria.html">Galería</a></li>
+                <li><a class="hover aqui" href="#">Presupuesto</a></li>
+                <li><a class="hover" href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+        <img src="../img/CubiertaTanqueReparada.jpg" alt="Cubierta de tanque">
+    </header>
+    <main>
+        <h2>Solicite su presupuesto</h2>
+        <form id="my-form" name="my-form" action="#" method="get" target="_blank">
+            <ul class="formulario">
+                <li><label for="first-name">Nombre:</label>
+                    <input type="text" id="first-name" name="first-name" placeholder="Escriba su nombre" 
+                    pattern="[a-zA-Z]{2,15}" required>
+                </li>
+                <li><label for="email">Correo:</label>
+                    <input type="email" id="email" name="email" pattern="[a-zA-Z0-9.-!_]+@[a-zA-Z.-_!]\.[a-zA-Z]{2,4}"
+                    placeholder="Escriba su correo" title="Ejemplo23@ejele.com" required>
+                </li>
+                <li><label for="telephone">Telefono:</label>
+                    <input type="tel" id="telephone" name="telephone" pattern="[0-9]{9}" 
+                    placeholder="Escriba su numero de telefono" required>
+                </li>
+                <li><label for="message">Solicite mas información:</label>
+                    <textarea rows="10" id="message" placeholder="Haga cualquier pregunta"></textarea>
+                </li>
+            </ul>
+
+             <div class="politicas">
+                <fieldset><legend>Acepte las políticas de privacidad</legend>
+                    <div class="centrar">
+                        <label for="si">SI</label>
+                        <input type="checkbox"  id="si" required name="politica" title="Acepte las politicas de privacidad">
+                    </div>
+                </fieldset>
+            </div>
+            <div class="button2">
+                <div class="button1">
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Borrar">
+                </div>
+            </div>
+            
+
+        </form>
+        
+    </main>
+    <footer>
+        <div class="infoPie">
+            <a href="#">Aviso legal</a>
+            <a target="_blank" href="https://www.google.es/maps/@28.1075026,-15.4155992,15z?hl=es&entry=ttu&g_ep=EgoyMDI0MDkyNS4wIKXMDSoASAFQAw%3D%3D">Dirección</a>
+        </div>
+        <p>&#169; 2024 Capitán de la reforma</p>
+        <ul>
+            <li><a target="_blank" href="https://www.facebook.com/">
+                <img class="icono1" src="../img/facebook.png" alt="">
+            </a></li>
+            <li><a target="_blank" href="https://www.instagram.com/">
+                <img class="icono2" src="../img/Instagram.png" alt="">
+            </a></li>
+        </ul>
+    </footer>
+</body>
+</html>
